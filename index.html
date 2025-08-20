@@ -10,24 +10,31 @@
       padding: 0;
       height: 100%;
       width: 100%;
-      overflow: hidden; /* 🚀 disables scrollbars */
+      overflow: hidden;
       background: #1f2434;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
+    .widget-container {
+      transform: scale(0.6);          /* 🔽 scale down to 60% */
+      transform-origin: center center; /* keep it centered */
+    }
   </style>
 </head>
 <body>
-  <div class="livecoinwatch-widget-1"
-       lcw-coin="ETH"
-       lcw-base="EUR"
-       lcw-secondary="BTC"
-       lcw-period="d"
-       lcw-color-tx="#ffffff"
-       lcw-color-pr="#58c7c5"
-       lcw-color-bg="#1f2434"
-       lcw-border-w="1">
+  <div class="widget-container">
+    <div class="livecoinwatch-widget-1"
+         lcw-coin="ETH"
+         lcw-base="EUR"
+         lcw-secondary="BTC"
+         lcw-period="d"
+         lcw-color-tx="#ffffff"
+         lcw-color-pr="#58c7c5"
+         lcw-color-bg="#1f2434"
+         lcw-border-w="1">
+    </div>
   </div>
 </body>
 </html>
